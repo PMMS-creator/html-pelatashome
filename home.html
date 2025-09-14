@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pelatas — Elite trainers in sports, performance, and life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#c3623f;--ink:#111827;--muted:#4b5563}
+*{box-sizing:border-box} html,body{margin:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+
+/* Nav */
+.nav{position:absolute;inset:24px 24px auto 24px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.logo{font-weight:800;font-size:28px;color:#9a5a3b;letter-spacing:.3px}
+.signup{border:1px solid #e2a086;background:#d68660;color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none}
+
+/* Hero */
+.hero{position:relative;height:min(72vh,780px);min-height:520px;background:url('hero.jpg') center/cover no-repeat;display:flex;align-items:center}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.28),rgba(0,0,0,.28))}
+.hero .content{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 24px;color:#fff}
+h1{font-family:'Playfair Display',serif;font-weight:700;line-height:1.05;font-size:clamp(32px,5vw,64px);margin:0 0 18px}
+.sub{font-size:18px;color:#f3f4f6;max-width:720px;margin:0 0 24px}
+.cta{display:inline-block;background:var(--brand);color:#fff;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:600}
+
+/* Sections */
+.section{padding:56px 24px}
+.container{max-width:1100px;margin:0 auto}
+
+/* Avatars */
+.avatars{display:flex;gap:24px;justify-content:center;margin-top:-40px;margin-bottom:32px}
+.avatar{width:110px;height:110px;border-radius:999px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.12);background:#eee}
+.avatar img{width:100%;height:100%;object-fit:cover}
+
+/* How it works */
+.hiw h2{font-family:'Playfair Display',serif;font-size:36px;margin:12px 0 24px;color:#111827;text-align:left}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.step h3{font-size:22px;margin:0 0 10px}
+.step p{line-height:1.65;color:var(--muted);margin:0}
+
+/* Responsive */
+@media (max-width:900px){
+  .avatars{flex-wrap:wrap}
+  .steps{grid-template-columns:1fr}
+  .hiw h2{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">Pelatas</div>
+  <a class="signup" href="./signup.html">Apply to Join</a>
+</header>
+
+<section class="hero">
+  <div class="content">
+    <h1>Elite trainers in sports, performance, and life, all in one place</h1>
+    <p class="sub">Connect with top-tier coaches and mentors for every goal and ambition.</p>
+
+<div class="search-bar">
+  <select id="location">
+    <option value="">Location</option>
+  </select>
+
+  <select id="category">
+    <option value="">Category</option>
+  </select>
+
+  <button id="search-btn">Search</button>
+</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="avatars" aria-label="Example trainers">
+      <div class="avatar"><img src="coach1.jpg" alt="Coach 1"></div>
+      <div class="avatar"><img src="coach2.jpg" alt="Coach 2"></div>
+      <div class="avatar"><img src="coach3.jpg" alt="Coach 3"></div>
+      <div class="avatar"><img src="coach4.jpg" alt="Coach 4"></div>
+    </div>
+
+    <div class="hiw">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Discover</h3>
+          <p>Browse elite profiles and explore verified reviews to find the right expert for your goals.</p>
+        </div>
+        <div class="step">
+          <h3>2. Connect</h3>
+          <p>Message professionals directly to discuss your needs and schedule personalized sessions.</p>
+        </div>
+        <div class="step">
+          <h3>3. Accelerate</h3>
+          <p>Engage in tailored guidance designed to elevate your performance and unlock your full potential.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pelatas</title>
+  <style>
+.search-bar {
+  display: flex;
+  gap: 16px;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.search-bar select,
+.search-bar button {
+  padding: 14px 22px;          /* bigger padding */
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;             /* larger text */
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  min-width: 150px;            /* wider buttons */
+  text-align: center;
+}
+
+/* Dropdown style */
+.search-bar select {
+  background-color: #f7f3ef;   /* beige background */
+  color: #333;
+}
+
+/* Search button style */
+#search-btn {
+  background-color: #C7683B !important;  /* force orange */
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* Hover effect */
+#search-btn:hover {
+  background-color: #a9522f !important;  /* darker orange */
+}
+    body { font-family: Arial, sans-serif; margin:0; }
+    .hero {
+      height: 90vh;
+      background: url('assets/hero.PNG) center/cover no-repeat;
+      display:flex; align-items:center; justify-content:center;
+      color:white; text-align:center;
+    }
+    .hero h1 { font-size: 2.5em; }
+    .cta { background:#c3623f; color:#fff; padding:15px 25px; text-decoration:none; border-radius:5px; }
+    .section { padding:40px; text-align:center; }
+/* Dropdowns styled with light background */
+.search-bar select {
+  background-color: #f7f3ef; /* light beige like homepage */
+  color: #333;
+}
+
+/* Search button styled in your theme orange */
+#search-btn {
+  background-color: #C7683B; /* orange tone from your homepage */
+  color: white;
+  font-weight: 500;
+}
+  </style>
+</head>
+   
+  <div class="footer-bottom">
+<footer style="background:#d45a2e; color:#fff; padding:40px 20px; text-align:center;">
+  <div style="max-width:1100px; margin:0 auto;">
+    
+    <!-- Brand + Copyright -->
+    <div style="font-family:Georgia,'Times New Roman',serif; font-size:22px; font-weight:700; margin-bottom:6px;">
+      Pelatas
+    </div>
+    <div style="margin-bottom:20px;">
+      © 2025. All rights reserved.
+    </div>
+
+    <!-- Navigation Links -->
+    <nav style="margin-bottom:18px; font-size:15px;">
+      <a href="./home.html" style="color:#fff; text-decoration:none; margin:0 10px;">Home</a>
+      <a href="./about.html" style="color:#fff; text-decoration:none; margin:0 10px;">About</a>
+      <a href="./faqs.html" style="color:#fff; text-decoration:none; margin:0 10px;">FAQs</a>
+      <a href="./terms.html" style="color:#fff; text-decoration:none; margin:0 10px;">Terms of Service</a>
+      <a href="./privacy.html" style="color:#fff; text-decoration:none; margin:0 10px;">Privacy Policy</a>
+      <a href="./contact.html" style="color:#fff; text-decoration:none; margin:0 10px;">Contact</a>
+    </nav>
+
+    <!-- Contact -->
+    <div style="margin-bottom:18px; font-size:15px;">
+      <a href="mailto:team@pelatas.com" style="color:#fff; text-decoration:none;">
+        team@pelatas.com
+      </a>
+    </div>
+
+    <!-- Social Icons -->
+    <div style="display:flex; justify-content:center; gap:20px;">
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" style="color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 
+          2.239 5 5 5h14c2.762 0 5-2.239 
+          5-5v-14c0-2.761-2.238-5-5-5zm-11 
+          19h-3v-10h3v10zm-1.5-11.268c-.966 
+          0-1.75-.79-1.75-1.764s.784-1.764 
+          1.75-1.764c.965 0 1.75.79 
+          1.75 1.764s-.785 1.764-1.75 
+          1.764zm13.5 11.268h-3v-5.604c0-1.337-.025-3.058-1.865-3.058-1.868 
+          0-2.155 1.459-2.155 
+          2.963v5.699h-3v-10h2.881v1.367h.041c.401-.761 
+          1.379-1.562 2.838-1.562 
+          3.033 0 3.591 1.996 3.591 4.59v5.605z"/>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram" style="color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 
+          4.85.07 1.366.062 2.633.332 
+          3.608 1.308.975.975 1.246 2.242 
+          1.308 3.608.058 1.266.069 1.645.069 
+          4.851s-.012 3.584-.07 4.85c-.062 
+          1.366-.332 2.633-1.308 
+          3.608-.975.975-2.242 1.246-3.608 
+          1.308-1.266.058-1.645.069-4.851.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 
+          15.747 2.163 15.368 2.163 
+          12s.012-3.584.07-4.85c.062-1.366.332-2.633 
+          1.308-3.608.975-.975 2.242-1.246 
+          3.608-1.308C8.416 2.175 8.796 2.163 
+          12 2.163zm0-2.163C8.741 0 8.332.012 
+          7.052.07 5.775.128 4.602.443 
+          3.635 1.41c-.966.967-1.282 2.14-1.34 
+          3.417C2.012 6.107 2 6.516 2 
+          9.775v4.45c0 3.259.012 3.668.07 
+          4.948.058 1.277.374 2.45 
+          1.34 3.417.967.967 2.14 1.282 
+          3.417 1.34 1.28.058 1.689.07 
+          4.948.07s3.668-.012 
+          4.948-.07c1.277-.058 2.45-.374 
+          3.417-1.34.967-.967 1.282-2.14 
+          1.34-3.417.058-1.28.07-1.689.07-4.948v-4.45c0-3.259-.012-3.668-.07-4.948-.058-1.277-.374-2.45-1.34-3.417C19.4.443 
+          18.227.128 16.95.07 15.668.012 15.259 
+          0 12 0zm0 5.838a6.162 6.162 0 1 0 0 
+          12.324 6.162 6.162 0 0 0 0-12.324zm0 
+          10.162a3.999 3.999 0 1 1 0-7.998 3.999 
+          3.999 0 0 1 0 7.998zm6.406-11.845a1.44 
+          1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88z"/>
+        </svg>
+      </a>
+      <!-- TikTok -->
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok" style="color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+          <path d="M12 0c-6.627 0-12 5.373-12 
+          12s5.373 12 12 12 12-5.373 
+          12-12-5.373-12-12-12zm3.75 
+          9.75c1.284.927 2.934 1.5 
+          4.688 1.5v-3.188c-.337.033-.675.05-1.012.05-1.125 
+          0-2.25-.375-3.188-1.063v7.313c0 
+          2.737-2.213 4.95-4.95 4.95s-4.95-2.213-4.95-4.95 
+          2.213-4.95 4.95-4.95c.35 
+          0 .688.038 1.012.113v3.212c-.325-.1-.662-.15-1.012-.15-1.237 
+          0-2.25 1.013-2.25 2.25s1.013 2.25 
+          2.25 2.25 2.25-1.013 
+          2.25-2.25v-8.962h3.212c-.088.537-.262 
+          1.05-.512 1.5z"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
